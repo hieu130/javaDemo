@@ -1,5 +1,7 @@
 package com.example.java.controller;
 
+import com.example.java.entity.CategoryStatus;
+import com.example.java.model.CategoryModel;
 import org.jboss.weld.environment.logging.Category;
 
 import javax.servlet.ServletException;

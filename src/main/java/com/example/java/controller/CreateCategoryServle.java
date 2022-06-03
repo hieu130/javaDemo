@@ -1,5 +1,7 @@
 package com.example.java.controller;
 
+import com.example.java.model.CategoryModel;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -11,12 +13,12 @@ public class CreateCategoryServle extends HttpServlet {
 
     @Override
     public void init() throws ServletException {
-        categoryModel = new MySqlCategoryModel();
+        categoryModel = new CategoryModel();
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("/admin/category/from.jsp").forward(req,resp);
+        req.getRequestDispatcher("").forward(req,resp);
     }
 
     @Override
