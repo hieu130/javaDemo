@@ -3,7 +3,7 @@ package com.example.java.entity.base;
 import java.nio.channels.FileLock;
 import java.time.LocalDateTime;
 
-public class BaseEntity {
+public abstract class BaseEntity {
     public LocalDateTime createdAt;
     public LocalDateTime updatedAt;
     public LocalDateTime deletedAt;
